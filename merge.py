@@ -1,7 +1,7 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer, AutoConfig
 from peft import PeftModel
 
-def merge_lora(lora_path, model_path, output_dir)
+def merge_lora(lora_path, model_path, output_dir):
     # 加载模型配置
     config = AutoConfig.from_pretrained(model_path)
     # 加载模型
@@ -18,5 +18,5 @@ def merge_lora(lora_path, model_path, output_dir)
 if __name__ == "__main__":
     lora_path = "lemonilia/LimaRP-perscengen-v5"
     model_path = "Yarn-Llama-2-7b-64k"
-    output_dir - "merge_model/"
+    output_dir = "merge_model/"
     merge_lora(lora_path, model_path, output_dir)
